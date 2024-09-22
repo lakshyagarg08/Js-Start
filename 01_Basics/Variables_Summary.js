@@ -44,3 +44,32 @@ console.log(typeof myobj );
 console.log(typeof Myfunction );
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+//  Stack ( Primitive Data Type) , Heap (Non - Primitive)
+
+ let myytname = "Lakshya"
+
+ let anothername = myytname
+
+ anothername = "Prankal"
+
+ console.log(typeof myytname);
+ console.log(anothername);
+ 
+//   In this as data type is Primitve then the memory is in stack, And in stack there is a copy made so the original data doesnt change as a copy is given not the original value is given so their is change in the value of copy data which can be seen in myytname and anothername
+
+let userone = {             // Non Primitive
+    email : "laks@gmail.com",
+    upi : "userone@upi"
+}
+
+let usertwo = userone
+usertwo.email = " arun@laks.com"
+
+console.log(userone);
+console.log(usertwo)
+//  On making change in usertwo.email the original value  changes as their is no copy passed in heap, they're pointing to the original value
