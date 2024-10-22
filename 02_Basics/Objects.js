@@ -15,4 +15,4 @@ const Jsuser = {
 }
 
 console.log(Jsuser.email)
-console.log(Jsuser[email])
+console.log(Jsuser[email]) // This will not print untl the email var is defined as string
